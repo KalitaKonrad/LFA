@@ -1,0 +1,25 @@
+0^(n+1) 1^n 0^k, k>=0 n>=1
+Z -> 0XY, X -> 01 | 0X1, Y -> 1 | 1Y
+
+J={a, b, ba, bab, baba, …}
+Z -> a | b | bX, X -> a | aY, Y -> b | bX
+
+
+a^n b^k c^n, n>=1 k>1
+Z -> aXc, X -> aXc | bY, Y -> eps | bY
+
+
+J={a, b, aaa, bbb, aaaaa, bbbbb, …}
+Z -> aX | bY, X -> eps | aaX, Y -> eps | bbY
+
+
+0^n 0^k 1^k 1^n, k,n>0
+Z -> 0 X 1, X -> 01 | 0X1 | Y, Y -> 01 | 0Y1
+
+
+aba, abbba, abbbbba…
+Z -> aXa, X -> b | bX
+
+
+a^n b^k a^k b^n, k,n>=1
+Z -> aZb | aXb, X -> aXb | ab

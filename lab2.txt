@@ -1,0 +1,9 @@
+Słowa złożone z niepatrzyste liczby 1: X = { w | w jest napisem zero-jedynkowym zawierającym nieparzystą ilość '1'}  X = L(A) 
+
+A = <S, V, delta, S0, Z>
+
+Automaty skonczenie stanowe przedstawiamy jako grafy, a stany bedziemy oznaczac kolkiem. Bedziemy moze etykietowac stany - q0, ale niekoneicznie bedziemy to robic.
+
+Zadanie 1:
+
+a

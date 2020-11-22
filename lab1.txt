@@ -1,0 +1,109 @@
+Zadanie 1:
+a)
+V= {0,1}
+V^2 = {00, 01, 10, 11}
+V^3 = {000, 010, 100, 110, 001, 011, 101, 111}
+
+b)
+
+V^2 = {@@, @#, #@, @$, ##, #$, $@, $#,$$}
+V^3 = V^2 x V = {...}
+
+Zadanie 3:
+
+V* = {eps, 0, 1, 00, 10, 01, 11, 000, 001, …}
+
+Zadanie 4:
+
+V = {c, b}
+P = {cb -> b, bc -> b, bb -> c, cc -> c}
+
+Czy wynik jest zależny od kolejności wyciąganych kul?
+
+np. słowo: cbbbc 
+
+1. bbb -> bc -> b
+1. bbb -> cb -> b
+2. bbc -> cc -> c
+2. bbc -> bb -> c
+3. bcb -> bb -> c
+3. bcb -> bb -> c
+4. cbc -> bc -> b
+4. cbc -> cb -> b
+5. ccb -> cb -> b
+5. ccb -> cb -> b
+6. cbb -> bb -> c
+6. cbb -> cc -> c
+7. ccc -> cc -> c
+7. ccc -> cc -> c
+8. bcc -> bc -> b
+8. bcc -> bc -> b
+
+cbbbc -> cbbb -> cbc -> cb -> b
+cbbbc -> bbbc -> cbc -> bc -> b
+
+Nie jest, bo za każdym razem redukuje się do tej samej kuli.
+
+Zadanie 6:
+
+a) gramatyka typu 1
+b) gramatyka typu 3
+
+Zadanie 7:
+
+V = {0, 1}, N = {A}, S = A, P = {A -> 0|1|eps, A -> 0A0 | 1A1}
+
+Zadanie 8:
+
+a) Gramatyka typu 3, czyli jezyk regularny
+
+S -> aA
+A -> baA | aA | ba | a 
+
+b) Gramatyka typu 3, czyli jezyk regularny
+
+S -> aS | bS | aA
+A -> aB | bB
+B -> eps
+
+
+c) Gramatyka jednoznaczna - gdy do danego slowa mozna dotrzec tylko w jeden scisle okreslony sposob. 
+
+d) S -> Sa | Sb | eps - gramatyka typu 3 regularna lewostronnie (bo w produkcji ma zawsze nonterminala po lewej stronie, ale przy eps nie musi być - ignorujemy)
+
+
+Zadanie 9:
+
+a)
+
+V = {a, b}
+N = {A}
+S = A
+P = {A -> ab, A -> aAb}
+
+b) a^n b^n c^k d^k n>1, k >= 1
+
+V = {a,b,c,d}
+N = {X, Y, Z}
+P = {Z -> aXbY, X -> ab, X -> aXb, Y -> cYd, Y -> cd} 
+
+c) a^n b^n c^n , n >= 1
+
+V = {a,b,c}
+N = {X, Y, Z}
+S = X
+P = {Z -> abc, X -> aXbc, Xb -> bX, Xc -> Ybcc, bY -> Yb, aY -> aa, aY -> aaX}
+
+Zadanie 10:
+Napisz gramatyke dla poprawnego nawiasowania - przyklady slow:
+(), ()(), (()()), ((()))
+
+G = (V, N, P, S)
+
+V = {(,)}
+N = {X}
+P = {X -> (X)|XX|()|(X)X}
+S = X
+
+(())(()) 
+X -> (X)X -> (())X -> (())(X) -> (())(())
