@@ -1,0 +1,38 @@
+Zad. 2)
+
+a) L^0 = {eps}
+b) L^1 = {0, 10, 111, 001}
+
+
+Zad 3)
+
+a) L = {a, b} -> L* = {a, b, aa, bb, aaa, aab, abb, bbb, baa, bba, bab, bbb....}
+
+
+Zad 4)
+a) L = {a, b} -> L^i ma  
+
+
+Zad 8)
+
+a) będący zbiorem łańcuchów zaczynającym się o '1' po którym następuje jedno lub więcej '0' i kończący się '1'
+
+regex: 10(0)*1
+
+b)
+regex: 01(01)*0 + 10(10)*1
+
+Zadanie: Regex priorytety
+
+(a((b*))a))+(ab)
+
+Zad 9)
+
+a) 0*10* - ciag zer i jedynek gdzie jest tylko jedna jedynka
+
+b) SIGMA -> S
+S*1S* dowolny ciąg, który zawiera przynajmniej jedną jedynkę.
+
+
+? to eps + a 
++ to aa* 
